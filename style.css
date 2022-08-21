@@ -1,0 +1,243 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+header i{
+    font-weight: bold;
+}
+i{
+    cursor: pointer;
+}
+.form-outline,.links{
+    width: 50%;
+}
+.form-outline i{
+    position: absolute;
+    margin-left: 30%;
+    float: right;
+    color: blue;
+}
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.round{
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
+    background-color: transparent;
+    width: 100px;
+    color: whitesmoke;
+}
+.search,.quick-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.quick-links{
+    flex-direction: column ;
+    margin-top: 10%;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.opinion{
+    position: absolute;
+    right: 20px;
+    top: 85%;
+    color: whitesmoke;
+    display: flex;
+}
+.opinion i{
+    margin-right: 10px;
+}
+.play,.opinion-text{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.play:hover{
+    border-radius: 20px;
+    background-color: gray;
+    cursor: pointer;
+}
+.opinion-text:hover{
+    border-radius: 20px;
+    background-color: gray;
+    cursor: pointer;
+}
+.navigations{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+.navigations i{
+    margin-right: 10px;
+    background-color: gray;
+    opacity: 0.8;
+}
+.scrollable{
+    padding:10px ;
+    background-color: gray;
+    margin-top: 17%;
+    
+    width: 100%;
+}
+.square{
+    border: 1px solid blue;
+    color: blue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.square i{
+    margin-left: 10px;
+}
+.col2,.col3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
+    height: 100%;
+}
+
+.slider{
+    position:relative;
+    width: 60%;
+  }
+  .slider > .item{
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    overflow:hidden;
+  }
+  .slider > .item.active{
+    opacity: 1;
+    z-index:10;
+  }
+  .slider .slider-control{
+    color: rgba(150,150,150,.6);
+    position:absolute;
+    top:calc(50% - 30px);
+    height:60px;
+    width:60px;
+    line-height:60px;
+    z-index: 100;
+    text-align:center;
+    cursor: pointer;
+    opacity: .5;
+  }
+  .slider .slider-control:hover{
+    opacity: 1;
+  }
+  .slider .slider-control.next{
+    right:0;
+  }
+  .slider .slider-control.prev{
+    left:0;
+  }
+  .slider .slider-nav{
+    width:100%;
+    height: 40px;
+    position: absolute;
+    z-index: 100;
+    text-align:center;
+    bottom:0;
+    left:0;
+  }
+  .slider .slider-nav a{
+    display: inline-block;
+    margin:5px;
+    width:15px;
+    height:15px;
+    background: rgba(150,150,150,.6);
+    overflow: hidden;
+    border-radius:50%;
+    opacity: .5;
+  }
+  .slider .slider-nav a:hover{
+    opacity: .9;
+  }
+  .slider .slider-nav a.active{
+      background: #fff;
+    opacity: 1;
+  }
+  
+  
+  /* For  Demo Only. */
+  /* The code below is not needed for slideshow to work. */
+  
+  /*  Animations  */ 
+  .slider .item.active .item-content {
+    animation-name: fadeUp;
+    animation-duration: 0.5s;
+  }
+  .slider .item.active .item-content p {
+    animation-name: fadeUp;
+    animation-duration: .8s;
+  }
+  
+  @keyframes fadeUp {
+    0% {
+      margin-top: 60px;
+      opacity: 0;
+    }
+    100% {
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+  
+  .slider {
+    width: 960px;
+    height: 300px;
+    margin: 30px auto;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8);
+  }
+  .slider > .item {
+    text-align: center;
+  }
+  .slider > .item .item-content {
+    padding: 60px;
+  }
